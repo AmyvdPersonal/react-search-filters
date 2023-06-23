@@ -1,0 +1,22 @@
+const Table = ({ data }) => {
+  return (
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Email</th>
+        </tr>
+        {data.map((item) => (
+          <tr key={item.id}>
+            <td>{item.title_book}</td>
+            <td>{item.writer_book}</td>
+            <td>{item.genre}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
+
+export default Table;
